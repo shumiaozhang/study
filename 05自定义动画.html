@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script>
+		$(function () {
+			// animate()
+			//   参数1：要修改的样式，对象结构，是唯一一个必选参数
+			//   参数2：运动时间
+			//   参数3：运动模式，  'linear'匀速  'swing'变速 - 默认值
+			//   参数4：函数，运动完毕后执行的操作
+
+			// 使用时，参数允许不连续的传入，但是顺序不能颠倒，参数1必选
+			$('#btn').click(function () {
+				$('#box').animate({
+					// width:200,
+					// height:270,
+					// top:130,
+					left:1256
+				}, 3000, 'linear',function(){
+					console.log('运动执行结束了');
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn">运动</button>
+	<div id="box"></div>
+</body>
+</html>

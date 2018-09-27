@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script>
+		$(function(){
+			var $divs = $('div');
+		$div.each(function(index,element){
+			//index --相当于for中的i
+			//element- -相当于for中的$divs[i]
+			$(element).css('width',110+index*10)
+		});
+		});
+	</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
